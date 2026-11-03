@@ -2,30 +2,28 @@ import type { Produto} from "./types";
 
 export let produtos: Produto[] = [
 {
-    id:"gimbal",
+    id: 1,
     nome: "Estabilizador com cardã - gimbal",
     categoria: "Acessórios",
     preco: 297.00,
     estoque: 18,
-    estoqueDisponivel: true
+
 },
 
  {
-    id: "heroCam",
+    id: 2,
     nome: "Hero cam 9",
     categoria: "Cameras",
     preco: 157.99,
     estoque: 10,
-    estoqueDisponivel: true
 },
 
 {
-    id: "mouse",
+    id: 3,
     nome: "mouse sem fio",
     categoria: "Acessórios",
     preco: 49.90,
     estoque: 25,
-    estoqueDisponivel: true
 }
 ];
 

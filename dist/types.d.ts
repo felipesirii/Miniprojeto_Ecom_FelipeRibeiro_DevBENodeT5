@@ -1,5 +1,5 @@
 export type ItemCarrinho = {
-    produtoId: string;
+    produtoId: number;
     quantidade: number;
 };
 export type Cliente = {
@@ -8,11 +8,25 @@ export type Cliente = {
     email: string;
 };
 export type Produto = {
-    id: string;
+    id: number;
     nome: string;
     categoria: string;
     preco: number;
     estoque: number;
-    estoqueDisponivel: boolean;
 };
+export type Pedido = {
+    id: number;
+    clienteId: number;
+    itens: ItemPedido[];
+    valorTotal: number;
+    status: StatusPedido;
+};
+export type ItemPedido = {
+    produtoId: number;
+    nomeProduto: string;
+    quantidade: number;
+    precoUnitario: number;
+    subtotal: number;
+};
+export type StatusPedido = "recebido" | "em processamento" | "concluído" | "cancelado";
 //# sourceMappingURL=types.d.ts.map
